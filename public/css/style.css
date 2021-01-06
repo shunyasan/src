@@ -1,0 +1,359 @@
+body{
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  margin: 0;
+}
+
+li{
+  list-style: none;
+}
+
+main{
+  padding: 2em 2.5em;
+}
+
+button{
+  cursor: pointer;
+}
+
+.top-logo img{
+  width: 16em;
+}
+
+.action-complete{
+  color: #60b060;
+  background-color: rgba(124, 204, 124, 0.3);
+  margin: 2em 0;
+  padding: 1em 0;
+  text-align: center;
+  display: block;
+}
+.action-danger{
+  color: #ff002b;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.header-all{
+  width: 100%;
+}
+
+.header-top{
+  line-height: 4em;
+  text-align: center;
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+.footer-add{
+}
+
+.top-menu{
+  color: rgba(255, 255, 255, 0.9);
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.top-menu:visited{
+  color: #fff;
+}
+
+
+/*///////////// menu.top ////////////*/
+.top-all{
+}
+
+.top-wrap{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.top-title{
+  text-align: center;
+  position: relative;
+  margin-bottom: 5em;
+}
+
+.top-title h1{
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  border: 3px solid #fff;
+  color: #fff;
+  padding: 13px;
+  z-index: 100;
+}
+
+.top-img{
+  display: inline-block;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.top-middle{
+
+}
+
+.top-middle-list{
+  margin-left: 2em;
+  font-size: 1.3em;
+}
+
+.top-button{
+  text-align: center;
+}
+
+button.decide{
+  font-size: 1.2em;
+  padding:1.5em 5em;
+  margin-top: 60px;
+  background-color: #d00939;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: #b00939;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+button.decide:active{
+  transform: translateY(5px);
+  box-shadow: none;
+}
+
+/*///////////// menu.list and menu.favolist////////////*/
+.list-items{
+  display: flex;
+  flex-direction: row;
+}
+
+.list-item{
+  border: 2px solid #aaa;
+  padding: 1em;
+  margin: 2em 1.5em;
+  display: inline-block;
+}
+
+.list-item p{
+  margin: 0.5em 0;
+}
+
+.item-name, .item-name:visited{
+  color: #000;
+  text-align: center;
+}
+
+.item-name img{
+  width: 16em;
+}
+
+.list-all{
+  width: 80%;
+  margin: 2em auto;
+}
+.form_favo{
+  text-align: center;
+}
+
+.favorite_list{
+  color: #fff;
+  font-size: 10px;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #e6c300;
+  border: 1px solid #998200;
+}
+
+.non{
+  font-size: 20px;
+}
+
+/*///////////// menu.detail ////////////*/
+
+.detail-item{
+  text-align: center;
+}
+
+.detail-item img{
+  width: 60%;
+}
+
+.recipe{
+  margin: 3em 10em;
+}
+
+.recipe p{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.recipe li{
+  margin: 1em 4.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.recipe-item a{
+  display: block;
+}
+
+.recipe-item span{
+  float: right;
+}
+
+.detail-btn{
+  display: flex;
+  justify-content:center;
+}
+
+.edit,.delete,.favorite{
+  color: #fff;
+  padding: 1em 2.5em;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 2em;
+}
+
+button.edit{
+  background-color: #28b5ff;
+  border: 1px solid #ddd;
+}
+
+button.favorite{
+  background-color: #e6c300;
+  border: 1px solid #998200;
+}
+
+button.delete{
+  background-color: #d00939;
+  border: 1px solid #b00939;
+}
+
+/*///////////// menu.create ////////////*/
+
+.create-all{
+  width: 70%;
+  margin: 3em auto;
+}
+
+.create-recipe{
+  margin: 3em 0;
+}
+
+.name-add{
+  margin-bottom: 2em;
+}
+
+.create-title{
+  font-size: 20px;
+}
+
+.explanation{
+  font-size: 13px;
+}
+
+/*input CreateMenu*/
+
+.create-all input{
+  height: 1.8em;
+}
+
+.add-mate{
+  margin-bottom: 1em;
+}
+
+.dish-name{
+  width: 60%;
+}
+
+.material{
+  width: 16em;
+}
+
+.amount-margin{
+  margin-left: 2em;
+}
+
+.amount{
+  width: 3em;
+}
+
+.unit{
+  width: 3em;
+}
+
+#add-wrap{
+  margin-bottom: 1.4em;
+}
+
+#list-cut,#list-add{
+  font-size: 11px;
+  padding: 0.5em 1.3em;
+  color: #fff;
+  border-radius: 6px;
+}
+
+#list-add{
+  background-color: #ffb000;
+  border: 2px solid #ff8f00;
+}
+
+#list-cut{
+  display: none;
+  background-color: #0084ff;
+  border: 2px solid #0070ff;
+}
+
+.recipe-add-wrap{
+  text-align: center;
+}
+
+button.recipe-add{
+  padding:1.5em 5em;
+  background-color: #d00939;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: #b00939;
+  margin: 2em auto 0;
+  display: inline-block;
+}
+
+/*///////////// menu.create ////////////*/
+
+button.recipe-edit{
+  padding:1.5em 5em;
+  background-color: #28b5ff;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: #ddd;
+  margin: 2em auto 0;
+  display: inline-block;
+}
+
+/*///////////// menu.random ////////////*/
+
+.random-item{
+  text-align: center;
+}
+
+.choise{
+  color: #fff;
+  padding: 1em 2.5em;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 2em;
+  border: 1px solid #b00939;
+  background-color: #d00939;
+
+  border-color: ;
+
+}
