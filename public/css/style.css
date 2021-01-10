@@ -181,13 +181,14 @@ button.decide:active{
 }
 
 .list-all{
-  width: 80%;
+  width: 80.5%;
   margin: 2em auto;
 }
 
 .list-items{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .list-item{
