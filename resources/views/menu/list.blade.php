@@ -3,6 +3,12 @@
 @extends('layout')
 @section('title','メニュー一覧')
 @section('content')
+
+@if(session('err_msg'))
+<p class="action-complete">
+  {{ session('err_msg') }}
+</p>
+@endif
 <div class="list-image">
   <div class="img-filter">
     <div class="list-page-name">
@@ -12,14 +18,8 @@
     </div>
   </div>
 </div>
-
 <!-- foreach -->
 <div class="list-all">
-  @if(session('err_msg'))
-    <p class="action-complete">
-      {{ session('err_msg') }}
-    </p>
-  @endif
   <ul class="list-items">
     @if(count($menus) == 0)
       <p class="non">

@@ -1,0 +1,3 @@
+[submodule "automenu"]
+	path = automenu
+	url = https://github.com/shunyasan/src.git
