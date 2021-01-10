@@ -1,8 +1,16 @@
 @extends('layout')
 @section('title','メニュー追加')
 @section('content')
+<div class="create-image">
+  <div class="img-filter">
+    <div class="list-page-name">
+      <h1>メニュー追加</h1>
+      <p>メニューを登録できます。</p>
+      <p>献立の作成にも反映されます。</p>
+    </div>
+  </div>
+</div>
 
-<h1 class="top-wrap">メニュー追加</h1>
 <div class="create-all">
   <form class="" action="{{ route('dish')}}" method="post" enctype="multipart/form-data"　onsubmit="checkCreate()">
     @csrf

@@ -3,8 +3,15 @@
 @extends('layout')
 @section('title','メニュー一覧')
 @section('content')
-
-<h1 class="top-wrap">メニュー一覧</h1>
+<div class="list-image">
+  <div class="img-filter">
+    <div class="list-page-name">
+      <h1>メニュー一覧</h1>
+      <p>登録されている料理の一覧を表示しています。</p>
+      <p>献立はこの中から作成されています。</p>
+    </div>
+  </div>
+</div>
 
 <!-- foreach -->
 <div class="list-all">

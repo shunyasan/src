@@ -2,7 +2,7 @@
   <div class="header-all">
     <div class="">
       <a href="{{ route(('top')) }}" class="top-logo">
-        <img src="{{ asset('images/AutoMenu_1.jpg') }}" alt="AutoMenu">
+        <img src="{{ asset('imgLayout/AutoMenu_1.jpg') }}" alt="AutoMenu">
       </a>
     </div>
     <div class="header-top">

@@ -3,8 +3,15 @@
 @extends('layout')
 @section('title','お気に入りメニュー')
 @section('content')
+<div class="favo-image">
+  <div class="img-filter">
+    <div class="list-page-name">
+      <h1>お気に入り一覧</h1>
+      <p>お気に入りした料理を表示しています。</p>
+    </div>
+  </div>
+</div>
 
-<h1 class="top-wrap">お気に入り一覧</h1>
 
 <!-- foreach -->
 <div class="list-all">

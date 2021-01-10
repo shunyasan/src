@@ -4,7 +4,8 @@
 @section('title','今日のメニュー')
 @section('content')
 
-<h1 class="top-wrap">こちらでいかがですか</h1>
+<h1 class="random-item">こちらでいかがですか？</h1>
+<h2 class="random-item">－本日の献立－</h2>
 <div class="random-item">
   <div class="list-item">
     <a href="/menu/detail/{{ $menu->id }}" class="item-name">

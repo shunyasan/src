@@ -12,6 +12,10 @@ a{
   text-decoration: none;
 }
 
+a:visited{
+  color:#fff;
+}
+
 p{
   margin: 0;
 }
@@ -26,6 +30,11 @@ main{
 
 button{
   cursor: pointer;
+  border-radius: 10px;
+}
+
+button:active{
+  outline: none;
 }
 
 .top-logo img{
@@ -65,13 +74,20 @@ button{
   margin-left: 0.5em;
 }
 
-.top-menu:visited{
+a.top-menu:visited{
   color: #fff;
+}
+
+a.top-menu:hover{
+  text-decoration: underline;
+  color:#fff;
 }
 
 
 /*///////////// menu.top ////////////*/
-.top-all{
+.all-title{
+  font-size: 4em;
+  text-align: center;
 }
 
 .top-wrap{
@@ -79,26 +95,31 @@ button{
   margin: 0 auto;
 }
 
-.top-title{
-  text-align: center;
+.top-image{
   position: relative;
+  background-image: url(../imgLayout/top-image.jpeg);
+  background-size: cover;
   margin-bottom: 5em;
-}
-
-.top-title h1{
-  position: absolute;
-  top: 5%;
-  left: 10%;
-  border: 3px solid #fff;
-  color: #fff;
-  padding: 13px;
+  height: 43em;
   z-index: 100;
 }
 
-.top-img{
+.top-image h1{
   display: inline-block;
-  opacity: 0.8;
+  border: 3px solid #fff;
+  color: #fff;
+  padding: 13px 23px;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.img-filter{
+  background-color: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  z-index: 50;
+  height: 100%;
   width: 100%;
+  color: #e9e9e9;
 }
 
 .top-middle{
@@ -131,6 +152,39 @@ button.decide:active{
 }
 
 /*///////////// menu.list and menu.favolist////////////*/
+
+.list-image{
+  position: relative;
+  background-image: url(../imgLayout/list-image.jpeg);
+  background-size: cover;
+  margin-bottom: 5em;
+  height: 30em;
+  z-index: 100;
+}
+
+.favo-image{
+  position: relative;
+  background-image: url(../imgLayout/favo-image.jpeg);
+  background-size: cover;
+  margin-bottom: 5em;
+  height: 30em;
+  z-index: 100;
+}
+
+.list-page-name{
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.list-page-name p{
+  margin-left:1em;
+}
+
+.list-all{
+  width: 80%;
+  margin: 2em auto;
+}
+
 .list-items{
   display: flex;
   flex-direction: row;
@@ -156,10 +210,6 @@ button.decide:active{
   width: 16em;
 }
 
-.list-all{
-  width: 80%;
-  margin: 2em auto;
-}
 .form_favo{
   text-align: center;
 }
@@ -241,6 +291,14 @@ button.delete{
 }
 
 /*///////////// menu.create ////////////*/
+.create-image{
+  position: relative;
+  background-image: url(../imgLayout/create-image.jpeg);
+  background-size: cover;
+  margin-bottom: 5em;
+  height: 30em;
+  z-index: 100;
+}
 
 .create-all{
   width: 70%;
@@ -343,6 +401,7 @@ button.recipe-edit{
 
 .random-item{
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .choise{
@@ -353,7 +412,153 @@ button.recipe-edit{
   margin: 0 2em;
   border: 1px solid #b00939;
   background-color: #d00939;
-
-  border-color: ;
-
 }
+
+
+/*///////////// menu.login ////////////*/
+
+.login-container{
+  position: relative;
+  height: 45em;
+  background-image: url(../imgLayout/login-image.jpeg);
+  background-size: cover;
+}
+
+.login-filter{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 50;
+  height: 100%;
+  width: 100%;
+  color: #e9e9e9;
+}
+
+.login-wrap{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 10em;
+  text-align: center;
+}
+
+.login-header{
+  font-size: 2em;
+  margin-bottom: 0.7em;
+}
+
+.form-wrap{
+}
+
+.form-texts{
+  padding-bottom: 1.5em;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.add-email-sp{
+  margin-right: 2em;
+}
+
+.add-pass-sp{
+}
+
+.form-texts label{
+  display: inline;
+}
+
+.exist-err{
+  color: #c4000a;
+  display: block;
+  padding-top: 1em;
+}
+
+.input-form{
+  width: 70%;
+  display: inline-block;
+  margin-left: 2.5em;
+}
+
+.input-pass{
+  width: 50%;
+  display: inline-block;
+  margin-left: 5em;
+}
+
+#email,#password{
+  width: 100%;
+  padding: 0.5em 0.7em;
+  border-radius: 4px;
+  border: none;
+  opacity:0.6;
+}
+ #email:focus,#password:focus{
+   border: 3px solid rgba(15,70,155,0.3);
+ }
+
+
+.login-btn{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border: 1px solid #e9e9e9;;
+  border-radius: .25rem;
+  transition: 1s;
+  color: #e9e9e9;
+  background-color: #222;
+  padding: 0.8em 1.5em;
+  font-size: .9rem;
+}
+
+.login-btn:hover{
+  background-color: #d2b071;
+}
+
+.other-link a{
+  text-decoration: underline;
+}
+
+.other-link a:hover{
+  transition: 1s;
+  color: #d2b071;
+}
+
+.btn-space{
+  padding: 0.4em .8em;
+  font-size: .9rem;
+}
+
+.form-remember{
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+
+/*///////////// menu.register ////////////*/
+
+.register-container{
+  position: relative;
+  height: 45em;
+  background-image: url(../imgLayout/register-image.jpeg);
+  background-size: cover;
+}
+
+.add-name-sp{
+  margin-right: -3em;
+}
+
+.add-confirm-sp{
+  margin-right: 2em;
+}
+
+#name,#password-confirm{
+  width: 100%;
+  padding: 0.5em 0.7em;
+  border-radius: 4px;
+  border: none;
+  opacity:0.6;
+}
+ #name:focus,#password-confirm:focus{
+   border: 3px solid rgba(15,70,155,0.3);
+ }
