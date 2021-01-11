@@ -37,6 +37,21 @@
   @endif
   </ul>
 </div>
-<!-- endforeach -->
+
+<script type="text/javascript">
+
+   $(window).scroll(function(){
+      var trigger = $(".favo-image").offset().top;
+      var top = $(document).scrollTop();
+      if(top > trigger){ // スクロール量が、指定した要素の位置を超えたら発火
+        $(".list-item").each(function(i) {
+          $(this).delay(500 * i).queue(function(){
+            $(this).addClass("show-drop").css({'opacity':'1'})
+          });
+        });
+      }
+    });
+
+</script>
 
 @endsection

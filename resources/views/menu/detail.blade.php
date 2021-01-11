@@ -1,6 +1,9 @@
 @extends('layout')
 @section('title','レシピ')
 @section('content')
+
+<div class="show">
+
 <div class="detail-all">
   <div class="detail-item">
     <h2>{{ $menu->dish_name }}</h2>
@@ -92,6 +95,7 @@
       </form>
     </div>
   </div>
+</div>
 </div>
 <script type="text/javascript">
    function checkDelete(){

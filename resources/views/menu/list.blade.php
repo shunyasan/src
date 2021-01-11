@@ -4,6 +4,7 @@
 @section('title','メニュー一覧')
 @section('content')
 
+<div class="show">
 @if(session('err_msg'))
 <p class="action-complete">
   {{ session('err_msg') }}
@@ -34,7 +35,6 @@
         </a>
         @guest
         @else
-
         @if($menu->users()->where('user_id',Auth::user()->id)->exists())
         <!--action -->
         <form class="form_favo" method="POST" action="{{ route('unfavorite',$menu) }}">
@@ -53,6 +53,26 @@
     @endif
   </ul>
 </div>
+</div>
 <!-- endforeach -->
+<script type="text/javascript">
+
+   $(window).scroll(function(){
+      var trigger = $(".list-image").offset().top;
+      var top = $(document).scrollTop();
+      if(top > trigger){ // スクロール量が、指定した要素の位置を超えたら発火
+        $(".list-item").each(function(i) {
+          $(this).delay(500 * i).queue(function(){
+            $(this).addClass("show-drop").css({'opacity':'1'});
+          });
+        });
+      }
+    });
+
+    $(".list-item").on('click',function(){
+      $(this).addClass("hop-hide").css({'opacity':'0'});
+    });
+
+</script>
 
 @endsection

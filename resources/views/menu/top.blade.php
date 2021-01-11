@@ -2,6 +2,8 @@
 @section('title','献立を作成')
 @section('content')
 
+<div class="show">
+
 @if (session('err_msg'))
   <p class="action-complete">
     {{ session('err_msg') }}
@@ -52,6 +54,7 @@
       </button>
     </div>
   </form>
+</div>
 </div>
 
 @endsection

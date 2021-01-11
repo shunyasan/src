@@ -1,6 +1,9 @@
 @extends('layout')
 @section('title','メニュー追加')
 @section('content')
+
+<div class="show">
+
 <div class="create-image">
   <div class="img-filter">
     <div class="list-page-name">
@@ -89,6 +92,7 @@
       <button class="recipe-add" type="submit">登録する</button>
     </div>
   </form>
+</div>
 </div>
 <script type="text/javascript">
 

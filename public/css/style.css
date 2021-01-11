@@ -85,6 +85,25 @@ a.top-menu:hover{
 
 
 /*///////////// menu.top ////////////*/
+.show{
+  animation: show 3s;
+}
+
+@keyframes show {
+  0%{
+    opacity: 0;
+    transform: translateY(-3em);
+  }
+  15%{
+    opacity: 0;
+    transform: translateY(-3em);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .all-title{
   font-size: 4em;
   text-align: center;
@@ -208,11 +227,45 @@ button.decide:active{
   flex-wrap: wrap;
 }
 
+.show-drop{
+  animation:fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  30%{
+    opacity: 0.5;
+    transform: translateY(-3em);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hop-hide{
+  animation:hopHide 0.7s;
+}
+
+@keyframes hopHide {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-10em);
+  }
+}
+
 .list-item{
   border: 2px solid #aaa;
   padding: 1em;
   margin: 2em 1.5em;
   display: inline-block;
+  opacity: 0;
 }
 
 .item-name img{
@@ -239,7 +292,7 @@ button.decide:active{
   border-radius: 4px;
   display: inline-block;
   margin: 0 auto;
-  background-color: #e6c300;
+  background-color: #d2b071;
   border: 1px solid #998200;
 }
 
@@ -417,14 +470,45 @@ button.recipe-edit{
 
 /*///////////// menu.random ////////////*/
 
+.opening{
+  animation: opening 3s linear;
+}
+
+@keyframes opening {
+  0%{
+      transform: translateY(-40em);
+  }
+  30%{
+    transform: translateY(0);
+  }
+  37%{
+    transform: translateY(-8em);
+  }
+  65%{
+    transform: translateY(0em);
+  }
+  72%{
+    transform: translateY(-3em);
+  }
+  85%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
 .random-item{
+  opacity: 0;
   text-align: center;
   margin-bottom: 1em;
 }
 
 .random-wrap{
   margin-top: 5em;
-}
+  text-align: center;
+  margin-bottom: 1em;}
 
 .choise{
   color: #fff;

@@ -4,9 +4,11 @@
 @section('title','献立作成')
 @section('content')
 
+<div class="created">
+
 <h1 class="random-item">こちらでいかがですか？</h1>
 <h2 class="random-item">－献立－</h2>
-<div class="random-wrap random-item">
+<div class="random-wrap">
   <table class="random-block">
     <tr class="random-block-day">
       <th class="badboy"></th>
@@ -123,5 +125,19 @@
     onclick="window.location.reload()">もう一度選ぶ</button>
   </div>
 </div>
+</div>
+
+<script type="text/javascript">
+
+    $(window).on('load',function(){
+      $(".created").addClass("opening");
+    });
+
+    $(".random-item").delay(1500).queue(function(){
+      $(this).addClass("show").css({'opacity':'1'});
+    });
+
+
+</script>
 
 @endsection
