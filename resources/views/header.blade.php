@@ -6,7 +6,7 @@
       </a>
     </div>
     <div class="header-top">
-      <a href="{{ route('top') }}" class="top-menu">メニューを決める</a>
+      <a href="{{ route('top') }}" class="top-menu">献立を作成</a>
       <a href="{{ route('list') }}" class="top-menu">メニュー一覧</a>
       <a href="{{ route('create') }}" class="top-menu">メニュー追加</a>
       <a href="{{ route('favolist') }}" class="top-menu">お気に入り</a>

@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title','メニューを決める')
+@section('title','献立を作成')
 @section('content')
 
 @if (session('err_msg'))
