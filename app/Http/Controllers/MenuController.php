@@ -189,9 +189,34 @@ class MenuController extends Controller
     /**
     *本日のメニューを表示する
     */
-    public function showRandom(){
-      $menu = Menu::inRandomOrder()->first();
-      return view('menu.random',compact('menu'));
+    public function showRandom(Request $request){
+      $time = [];
+      if (isset($request->count_1)) {
+        $time[] = $request->count_1;
+      }
+      if (isset($request->count_2)) {
+        $time[] = $request->count_2;
+      }
+      if (isset($request->count_4)) {
+        $time[] = $request->count_4;
+      }
+
+      $count = count($request->all());
+      $count -= 2;
+      $day = $request->meal_day;
+        for($i = 1;$i <= $count; $i++){
+          ${"menu".$i} = Menu::inRandomOrder()->take($day)->get();
+        }
+
+      if ($count == 1) {
+          return view('menu.random',compact('menu1','day','time'));
+      }elseif ($count == 2) {
+        return view('menu.random',compact('menu1','menu2','day','time'));
+      }elseif ($count == 3) {
+        return view('menu.random',compact('menu1','menu2','menu3','day','time'));
+      }
+
     }
+
 
 }

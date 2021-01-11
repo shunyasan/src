@@ -50,4 +50,4 @@ Route::post('/menu/favorite/{menu}', 'MenuController@exeFavorite')->name('favori
 Route::post('/menu/unfavorite/{menu}', 'MenuController@exeUnFavorite')->name('unfavorite');
 
 //ランダムページ表示
-Route::get('/menu/random', 'MenuController@showRandom')->name('random');
+Route::post('/menu/random', 'MenuController@showRandom')->name('random');
