@@ -33,9 +33,9 @@
       <div class="name-add">
         <p class="create-title">料理画像</p>
         <p class="explanation">画像を選択してください</p>
-        @if ($errors->has('dish_img'))
+        @if (session('err_msg'))
           <p class="action-danger">
-            {{ $errors->first('dish_img') }}
+            {{ session('err_msg') }}
           </p>
         @endif
       </div>
