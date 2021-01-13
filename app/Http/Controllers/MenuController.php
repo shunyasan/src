@@ -107,7 +107,7 @@ class MenuController extends Controller
         }
         else {
           \Session::flash('err_msg','画像がありません');
-          return redirect(route('menu.create'));
+          return redirect(route('create'));
         }
 
       $inputs = $request->all();
