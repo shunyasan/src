@@ -227,6 +227,8 @@ button.decide:active{
   flex-wrap: wrap;
 }
 
+.list-items a
+
 .show-drop{
   animation:fadeIn 3s;
 }
@@ -539,9 +541,14 @@ button.recipe-edit{
   margin: 0.5em 0;
 }
 
-.output-name, .output-name:visited{
+.item-name, .output-name, .output-name:visited{
   color: #000;
   text-align: center;
+}
+
+.output-name:hover, .item-name:hover{
+  color: #3490dc;
+  text-decoration: underline;
 }
 
 .rechoise{
