@@ -227,8 +227,6 @@ button.decide:active{
   flex-wrap: wrap;
 }
 
-.list-items a
-
 .show-drop{
   animation:fadeIn 3s;
 }
