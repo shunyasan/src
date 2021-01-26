@@ -470,8 +470,13 @@ button.recipe-edit{
 
 /*///////////// menu.random ////////////*/
 
+.created{
+  opacity: 0;
+}
+
 .opening{
   animation: opening 3s linear;
+  opacity: 0;
 }
 
 @keyframes opening {
@@ -508,7 +513,9 @@ button.recipe-edit{
 .random-wrap{
   margin-top: 5em;
   text-align: center;
-  margin-bottom: 1em;}
+  margin-bottom: 1em;
+  overflow: scroll;
+}
 
 .choise{
   color: #fff;
@@ -541,7 +548,7 @@ button.recipe-edit{
   width: 10em;
 }
 
-.random-block{
+table, tbody, .random-block{
   margin: 0 auto;
 }
 
