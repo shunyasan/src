@@ -120,10 +120,10 @@
       </tr>
     @endif
   </table>
-  <div class="">
-    <button class="choise" type="button" name="button"
-    onclick="location.href='{{ route('top') }}'">もう一度選ぶ</button>
-  </div>
+</div>
+<div class="rechoise">
+  <button class="choise" type="button" name="button"
+  onclick="location.href='{{ route('top') }}'">もう一度選ぶ</button>
 </div>
 </div>
 

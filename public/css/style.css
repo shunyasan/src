@@ -476,7 +476,7 @@ button.recipe-edit{
 
 .opening{
   animation: opening 3s linear;
-  opacity: 0;
+  opacity: 1;
 }
 
 @keyframes opening {
@@ -542,6 +542,11 @@ button.recipe-edit{
 .output-name, .output-name:visited{
   color: #000;
   text-align: center;
+}
+
+.rechoise{
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .output-name img{
